@@ -13,7 +13,7 @@ file = open('searchdata.txt', 'r')
 while True:
 	srchtxt = file.readline()
 	if not srchtxt: break
-	driver.get('http://www.justdial.com/') #opening justdial/patna
+	driver.get('http://www.justdial.com/') #opening justdial
 
 	search_box = driver.find_element_by_id("srchbx") #findng searchbox
 	search_box.send_keys(srchtxt, Keys.RETURN) #sending text and Enter
@@ -39,15 +39,7 @@ file.close()
 
 
 
-#Below every search term, Put the feed in a coloumn
 
-
-
-#Pick each item in each coloumn and find phone number
-
-
-
-#Write the phone number in CSV file
 
 
 
